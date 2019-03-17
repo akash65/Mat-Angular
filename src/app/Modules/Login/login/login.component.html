@@ -1,0 +1,42 @@
+<mat-toolbar>
+  <span>Login</span>
+</mat-toolbar>
+<mat-card class="card" style="align-content: center">
+  <!-- <mat-card-header>
+    <mat-card-title>Login</mat-card-title>
+  </mat-card-header> -->
+  <mat-card-content>
+    <div style="text-align:center">
+      <form class="LoginForm">
+        <div>
+          <i class="material-icons prefix">account_circle</i>&nbsp;
+
+          <mat-form-field>
+            <!-- <mat-label>User Name</mat-label> -->
+            <input matInput placeholder="User Name" [(ngModel)]="userName" [ngModelOptions]="{standalone:
+                  true}">
+          </mat-form-field>
+        </div>
+
+        <div>
+          <i class="material-icons prefix">vpn_key</i>&nbsp;
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Password" [(ngModel)]="password" [ngModelOptions]="{standalone:
+                  true}">
+          </mat-form-field>
+        </div>
+
+        <!-- <mat-spinner ></mat-spinner> -->
+      </form>
+      <div>
+        <mat-card-actions>
+          <button mat-raised-button (click)="login()" color="primary">Login</button>
+        </mat-card-actions>
+      </div>
+    </div>
+
+
+  </mat-card-content>
+
+</mat-card>
