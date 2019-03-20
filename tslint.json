@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "rulesDirectory": [
     "node_modules/codelyzer"
   ],
@@ -16,10 +17,23 @@
     },
     "eofline": true,
     "forin": true,
+=======
+  "extends": "tslint:recommended",
+  "rulesDirectory": [
+    "codelyzer"
+  ],
+  "rules": {
+    "array-type": false,
+    "arrow-parens": false,
+    "deprecation": {
+      "severity": "warn"
+    },
+>>>>>>> origin/master
     "import-blacklist": [
       true,
       "rxjs/Rx"
     ],
+<<<<<<< HEAD
     "import-spacing": true,
     "indent": [
       true,
@@ -27,6 +41,10 @@
     ],
     "interface-over-type-literal": true,
     "label-position": true,
+=======
+    "interface-name": false,
+    "max-classes-per-file": false,
+>>>>>>> origin/master
     "max-line-length": [
       true,
       140
@@ -43,8 +61,12 @@
         ]
       }
     ],
+<<<<<<< HEAD
     "no-arg": true,
     "no-bitwise": true,
+=======
+    "no-consecutive-blank-lines": false,
+>>>>>>> origin/master
     "no-console": [
       true,
       "debug",
@@ -53,16 +75,21 @@
       "timeEnd",
       "trace"
     ],
+<<<<<<< HEAD
     "no-construct": true,
     "no-debugger": true,
     "no-duplicate-super": true,
     "no-empty": false,
     "no-empty-interface": true,
     "no-eval": true,
+=======
+    "no-empty": false,
+>>>>>>> origin/master
     "no-inferrable-types": [
       true,
       "ignore-params"
     ],
+<<<<<<< HEAD
     "no-misused-new": true,
     "no-non-null-assertion": true,
     "no-redundant-jsdoc": true,
@@ -84,10 +111,24 @@
       "check-whitespace"
     ],
     "prefer-const": true,
+=======
+    "no-non-null-assertion": true,
+    "no-redundant-jsdoc": true,
+    "no-switch-case-fall-through": true,
+    "no-use-before-declare": true,
+    "no-var-requires": false,
+    "object-literal-key-quotes": [
+      true,
+      "as-needed"
+    ],
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+>>>>>>> origin/master
     "quotemark": [
       true,
       "single"
     ],
+<<<<<<< HEAD
     "radix": true,
     "semicolon": [
       true,
@@ -117,6 +158,9 @@
       "check-separator",
       "check-type"
     ],
+=======
+    "trailing-comma": false,
+>>>>>>> origin/master
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,

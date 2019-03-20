@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #sidenav mode="side" opened="false" class="sidenav" fixedInViewport="true"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
@@ -56,10 +57,14 @@
 </mat-sidenav-container>
 
 <!-- <mat-toolbar color="accent">
+=======
+<mat-toolbar color="accent">
+>>>>>>> origin/master
   <mat-toolbar-row>
     <span><a mat-button routerLink="/"> <i class="material-icons prefix">home</i>&nbsp;Home</a></span>
     <span class="spacer"></span>
     <a mat-button routerLink="/" routerLinkActive="active"><i class="material-icons prefix">input</i>&nbsp;Login</a>
+<<<<<<< HEAD
     <a mat-button routerLink="/signup" routerLinkActive="active"><i
         class="material-icons prefix">input</i>&nbsp;Register</a>
     <a mat-button routerLink="/customers" routerLinkActive="active"><i
@@ -72,3 +77,10 @@
 <router-outlet>
 
 </router-outlet> -->
+=======
+    <a mat-button routerLink="/signup" routerLinkActive="active"><i class="material-icons prefix">input</i>&nbsp;Register</a>
+    <a mat-button routerLink="/customers" routerLinkActive="active"><i class="material-icons prefix">face</i>&nbsp;Customers</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
+>>>>>>> origin/master

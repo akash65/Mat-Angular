@@ -28,7 +28,10 @@ import {
 
     ],
     exports: [
+<<<<<<< HEAD
         CommonModule,
+=======
+>>>>>>> origin/master
         MatToolbarModule,
         MatButtonModule,
         MatCardModule,

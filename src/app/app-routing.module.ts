@@ -6,10 +6,13 @@ import { LoginGuard } from './Services/loginGuard.guard';
 
 
 const appRoutes: Routes = [
+<<<<<<< HEAD
     // {
     //     path: '',
     //     loadChildren: './app.module#AppModule'
     // },
+=======
+>>>>>>> origin/master
     {
         path: '',
         loadChildren: './Modules/Login/login.module#LoginModule'
@@ -26,7 +29,11 @@ const appRoutes: Routes = [
     {
         path: '**',
         component: PageNotFoundComponent
+<<<<<<< HEAD
     },
+=======
+    }
+>>>>>>> origin/master
 
 ];
 

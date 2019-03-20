@@ -5,9 +5,15 @@ import { LoginComponent } from './login/login.component';
 import { LoginRoute } from './login-routing.module';
 import {
   MatButtonModule, MatCardModule, MatDialogModule, MatInputModule, MatTableModule,
+<<<<<<< HEAD
   MatToolbarModule, MatMenuModule, MatIconModule, MatProgressSpinnerModule, MatTabsModule, MatSidenavModule
 } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+=======
+  MatToolbarModule, MatMenuModule, MatIconModule, MatProgressSpinnerModule
+} from '@angular/material';
+import { FormsModule } from '@angular/forms';
+>>>>>>> origin/master
 
 @NgModule({
   declarations: [LoginComponent, SignupComponent],
@@ -15,7 +21,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     LoginRoute,
     FormsModule,
+<<<<<<< HEAD
     ReactiveFormsModule,
+=======
+>>>>>>> origin/master
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
@@ -24,9 +33,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatTableModule,
     MatMenuModule,
     MatIconModule,
+<<<<<<< HEAD
     MatProgressSpinnerModule,
     MatTabsModule,
     MatSidenavModule
+=======
+    MatProgressSpinnerModule
+>>>>>>> origin/master
   ],
   exports: [
     CommonModule,
@@ -38,9 +51,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatTableModule,
     MatMenuModule,
     MatIconModule,
+<<<<<<< HEAD
     MatProgressSpinnerModule,
     MatTabsModule,
     MatSidenavModule
+=======
+    MatProgressSpinnerModule
+>>>>>>> origin/master
   ]
 })
 export class LoginModule { }

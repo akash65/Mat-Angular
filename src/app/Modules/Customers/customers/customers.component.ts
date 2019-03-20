@@ -3,13 +3,18 @@ import { AppService } from '../../../Services/app.service';
 import { MatPaginator, MatTableDataSource, MatSort } from '@angular/material';
 import { Customer } from '../../Model/user.model';
 import { SelectionModel } from '@angular/cdk/collections';
+<<<<<<< HEAD
 import { LoaderService } from '../../../Services/loader.service';
 
 import { trigger, state, style, transition, animate} from '@angular/animations';
+=======
+
+>>>>>>> origin/master
 
 @Component({
   selector: 'app-customers',
   templateUrl: './customers.component.html',
+<<<<<<< HEAD
   styleUrls: ['./customers.component.scss'],
   animations: [
     trigger('detailExpand', [
@@ -23,29 +28,47 @@ import { trigger, state, style, transition, animate} from '@angular/animations';
 export class CustomersComponent implements OnInit, AfterViewInit {
 
   displayedColumns: string[] = ['select', 'id', 'name', 'email', 'phone', 'city', 'Action'];
+=======
+  styleUrls: ['./customers.component.scss']
+})
+export class CustomersComponent implements OnInit, AfterViewInit {
+
+  displayedColumns: string[] = ['select', 'id', 'name', 'email', 'phone', 'city', 'Actions'];
+>>>>>>> origin/master
   recordList: any;
   dataSource: any;
   initialSelection = [];
 allowMultiSelect = true;
+<<<<<<< HEAD
   // tslint:disable-next-line:no-inferrable-types
   showSpinner: boolean = true;
   // public dataSource = new MatTableDataSource(this.recordList);
 selection = new SelectionModel<Customer>(this.allowMultiSelect, this.initialSelection);
 expandedElement: Customer;
 
+=======
+selection = new SelectionModel<Customer>(this.allowMultiSelect, this.initialSelection);
+  // public dataSource = new MatTableDataSource(this.recordList);
+>>>>>>> origin/master
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
 
+<<<<<<< HEAD
   constructor(private httpservice: AppService, private loaderservice: LoaderService) {
     this.dataSource = new MatTableDataSource< Customer>(this.recordList);
+=======
+  constructor(private httpservice: AppService, ) {
+    // this.datasource = new MatTableDataSource< Customer>(this.recordList);
+>>>>>>> origin/master
 
   }
 
   ngOnInit() {
 
     // this.dataFetch();
+<<<<<<< HEAD
     // this.loaderservice.loadActive(true);
     this.showSpinner = true;
     this.getRecords();
@@ -56,6 +79,10 @@ expandedElement: Customer;
     this.httpservice.get().subscribe((res) => {
       // this.loaderservice.loadActive(false);
       this.showSpinner = false;
+=======
+    this.httpservice.get().subscribe((res) => {
+
+>>>>>>> origin/master
       this.dataSource = new MatTableDataSource(res);
       this.dataSource.sort = this.sort;
       this.dataSource.paginator = this.paginator;
@@ -79,11 +106,18 @@ expandedElement: Customer;
   //       console.log(err);
   //     });
   // }
+<<<<<<< HEAD
   filterData(searchText: string) {
     // const key = event.target.value;
     // console.log(key);
     // this.dataSource.filter = key.trim().toLowerCase();
     this.dataSource.filter = searchText.trim().toLowerCase();
+=======
+  filterData(event) {
+    const key = event.target.value;
+    // console.log(key);
+    this.dataSource.filter = key.trim().toLowerCase();
+>>>>>>> origin/master
   }
 
   isAllSelected() {
@@ -93,6 +127,7 @@ expandedElement: Customer;
   }
 
   masterToggle() {
+<<<<<<< HEAD
     this.isAllSelected() ?
     this.selection.clear() :
     this.dataSource.data.forEach(element => this.selection.select(element));
@@ -108,5 +143,10 @@ expandedElement: Customer;
 
   deleteRecord() {
 
+=======
+    this.isAllSelected() ? this.selection.clear() : this.dataSource.data.forEach(element => {
+      this.selection.select(element);
+    });
+>>>>>>> origin/master
   }
 }

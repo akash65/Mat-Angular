@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 
+=======
+<mat-toolbar>
+  <span>Login</span>
+</mat-toolbar>
+>>>>>>> origin/master
 <mat-card class="card" style="align-content: center">
   <!-- <mat-card-header>
     <mat-card-title>Login</mat-card-title>
   </mat-card-header> -->
   <mat-card-content>
+<<<<<<< HEAD
     <mat-card-header style="align-content: center">
       <mat-card-title>Sign In</mat-card-title>
     </mat-card-header>
@@ -30,12 +37,19 @@
        </form> -->
 
       <!-- form original-->
+=======
+    <div style="text-align:center">
+>>>>>>> origin/master
       <form class="LoginForm">
         <div>
           <i class="material-icons prefix">account_circle</i>&nbsp;
 
           <mat-form-field>
+<<<<<<< HEAD
             <mat-label>User Name</mat-label>
+=======
+            <!-- <mat-label>User Name</mat-label> -->
+>>>>>>> origin/master
             <input matInput placeholder="User Name" [(ngModel)]="userName" [ngModelOptions]="{standalone:
                   true}">
           </mat-form-field>
@@ -49,6 +63,7 @@
                   true}">
           </mat-form-field>
         </div>
+<<<<<<< HEAD
         <!-- <div >
          <mat-spinner [style.display]="showSpinner ? false :  false" ></mat-spinner> 
         </div> -->
@@ -60,6 +75,16 @@
         <a routerLink="">Forget Password?</a>
       </mat-card-actions>
 
+=======
+
+        <!-- <mat-spinner ></mat-spinner> -->
+      </form>
+      <div>
+        <mat-card-actions>
+          <button mat-raised-button (click)="login()" color="primary">Login</button>
+        </mat-card-actions>
+      </div>
+>>>>>>> origin/master
     </div>
 
 
