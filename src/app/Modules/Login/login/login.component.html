@@ -1,0 +1,68 @@
+
+<mat-card class="card" style="align-content: center">
+  <!-- <mat-card-header>
+    <mat-card-title>Login</mat-card-title>
+  </mat-card-header> -->
+  <mat-card-content>
+    <mat-card-header style="align-content: center">
+      <mat-card-title>Sign In</mat-card-title>
+    </mat-card-header>
+    <div style="text-align:center">
+      <!--form check-->
+      <!-- <form (ngSubmit)="onSubmit(loginForm)" [formGroup]="loginForm">
+          <div>
+              <i class="material-icons prefix">account_circle</i>&nbsp;
+    
+              <mat-form-field>
+                <mat-label>User Name</mat-label>
+                <input matInput placeholder="User Name" formControlName="userName" >
+              </mat-form-field>
+            </div>
+    
+            <div>
+              <i class="material-icons prefix">vpn_key</i>&nbsp;
+              <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Password" formControlName="password" >
+              </mat-form-field>
+            </div>
+          <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Submit</button>
+       </form> -->
+
+      <!-- form original-->
+      <form class="LoginForm">
+        <div>
+          <i class="material-icons prefix">account_circle</i>&nbsp;
+
+          <mat-form-field>
+            <mat-label>User Name</mat-label>
+            <input matInput placeholder="User Name" [(ngModel)]="userName" [ngModelOptions]="{standalone:
+                  true}">
+          </mat-form-field>
+        </div>
+
+        <div>
+          <i class="material-icons prefix">vpn_key</i>&nbsp;
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Password" [(ngModel)]="password" [ngModelOptions]="{standalone:
+                  true}">
+          </mat-form-field>
+        </div>
+        <!-- <div >
+         <mat-spinner [style.display]="showSpinner ? false :  false" ></mat-spinner> 
+        </div> -->
+      </form>
+      <mat-card-actions layout="row" layout-align="center">
+        <button mat-raised-button (click)="onLogin()" color="primary">Login</button>
+        <button mat-raised-button (click)="onRegister()" color="primary">Register</button><br>
+        <span class="buttonSpacer"></span>
+        <a routerLink="">Forget Password?</a>
+      </mat-card-actions>
+
+    </div>
+
+
+  </mat-card-content>
+
+</mat-card>

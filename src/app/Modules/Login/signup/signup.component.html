@@ -1,0 +1,45 @@
+<mat-card class="card">
+  <mat-card-content>
+    <div style="text-align:center">
+      <form class="registerForm">
+        <div>
+          <i class="material-icons prefix">account_circle</i>&nbsp;
+          <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="first name">
+          </mat-form-field>
+        </div>
+        <div>
+          <i class="material-icons prefix">account_circle</i>&nbsp;
+          <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="last name">
+          </mat-form-field>
+        </div>
+        <div>
+          <i class="material-icons prefix">email</i>&nbsp;
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="email">
+          </mat-form-field>
+        </div>
+        <div>
+          <i class="material-icons prefix">vpn_key</i>&nbsp;
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Password">
+          </mat-form-field>
+        </div>
+
+      </form>
+      <div>
+          <mat-card-actions layout="row" layout-align="center">
+              <button mat-raised-button (click)="signup()" color="primary">signup</button>
+              <button mat-raised-button (click)="reset()" color="primary">cancel</button>
+            </mat-card-actions>
+      </div>
+    </div>
+
+  </mat-card-content>
+  
+</mat-card>
