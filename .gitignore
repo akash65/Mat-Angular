@@ -4,8 +4,11 @@
 /dist
 /tmp
 /out-tsc
+<<<<<<< HEAD
+=======
 # Only exists if Bazel was run
 /bazel-out
+>>>>>>> origin/master
 
 # dependencies
 /node_modules
@@ -29,7 +32,10 @@ speed-measure-plugin.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+<<<<<<< HEAD
+=======
 .history/*
+>>>>>>> origin/master
 
 # misc
 /.sass-cache

@@ -3,5 +3,40 @@
 }
 
 .spacer {
+<<<<<<< HEAD
+    flex: 1 1 auto
+}
+
+.navTabBar {
+width: 300px !important;
+align-content: center;
+}
+
+.sidenav-container {
+    height: 100%;
+}
+
+.sidenav {
+    top: 0;
+    display: flex;
+    width: 200px;
+    box-shadow: 3px 0 6px rgba(0,0,0,.24);
+}
+.top-bar {
+    position: fixed;
+    top: 0;
+    z-index:1000;
+}
+
+.header {
+    align-content: center;
+
+    img {
+        transform: scale(0.8, 0.8);
+        -webkit-transform: scale(0.8, 0.8);
+        -ms-transform:scale(0.8, 0.8);
+    }
+=======
     flex: auto
+>>>>>>> origin/master
 }

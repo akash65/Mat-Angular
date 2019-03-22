@@ -5,7 +5,11 @@ import { SignupComponent } from './signup/signup.component';
 
 const loginRoutes: Routes = [
     {
+<<<<<<< HEAD
+        path: 'login',
+=======
         path: '',
+>>>>>>> origin/master
         component: LoginComponent
     },
     {

@@ -1,6 +1,10 @@
 # SimpleApp
 
+<<<<<<< HEAD
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+=======
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+>>>>>>> origin/master
 
 ## Development server
 

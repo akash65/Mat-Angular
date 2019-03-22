@@ -1,10 +1,86 @@
+<<<<<<< HEAD
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" opened="false" class="sidenav" fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async)">
+    <mat-toolbar class="header">
+      <div>
+        <img mat-avatar src="https://material.angular.io/assets/img/examples/shiba2.jpg" width="100px"
+          alt="Photo of a Shiba Inu">
+      </div>
+      <div>
+        <span>Title</span>
+      </div>
+      <span class="spacer"></span>
+    </mat-toolbar>
+    <mat-nav-list>
+      <mat-list-item>
+        <a>
+          <mat-icon class="icon">input</mat-icon>
+          <span class="label">Login</span>
+        </a>
+      </mat-list-item>
+      <a mat-list-item>
+        <mat-icon class="icon">input</mat-icon>
+        <span class="label">Login</span>
+      </a>
+      <a mat-list-item>
+        <mat-icon class="icon">input</mat-icon>
+        <span class="label">Login</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-toolbar color="accent">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon *ngIf="sidenav.opened">chevron_left</mat-icon>
+      <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+    </button>
+    <span><a mat-button routerLink="/"> <i class="material-icons prefix">home</i>&nbsp;Home</a></span>
+    <span class="spacer"></span>
+    <a mat-button routerLink="/login" routerLinkActive="active"><i class="material-icons prefix">input</i>&nbsp;Login</a>
+    <a mat-button routerLink="/signup" routerLinkActive="active"><i
+        class="material-icons prefix">input</i>&nbsp;Register</a>
+    <a mat-button routerLink="/customers" routerLinkActive="active"><i
+        class="material-icons prefix">face</i>&nbsp;Customers</a>
+
+  </mat-toolbar>
+  <!-- Tab group-->
+  <nav mat-tab-nav-bar mat-align-tabs="center">
+    <a mat-tab-link routerLink="/login" routerLinkActive #homeTab="routerLinkActive"
+      [active]="homeTab.isActive">Login</a>
+    <a mat-tab-link routerLink="/signup" routerLinkActive #searchTab="routerLinkActive"
+      [active]="searchTab.isActive">Register</a>
+
+  </nav>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
+
+<!-- <mat-toolbar color="accent">
+=======
 <mat-toolbar color="accent">
+>>>>>>> origin/master
   <mat-toolbar-row>
     <span><a mat-button routerLink="/"> <i class="material-icons prefix">home</i>&nbsp;Home</a></span>
     <span class="spacer"></span>
     <a mat-button routerLink="/" routerLinkActive="active"><i class="material-icons prefix">input</i>&nbsp;Login</a>
+<<<<<<< HEAD
+    <a mat-button routerLink="/signup" routerLinkActive="active"><i
+        class="material-icons prefix">input</i>&nbsp;Register</a>
+    <a mat-button routerLink="/customers" routerLinkActive="active"><i
+        class="material-icons prefix">face</i>&nbsp;Customers</a>
+  </mat-toolbar-row>
+</mat-toolbar> -->
+
+
+<!-- 
+<router-outlet>
+
+</router-outlet> -->
+=======
     <a mat-button routerLink="/signup" routerLinkActive="active"><i class="material-icons prefix">input</i>&nbsp;Register</a>
     <a mat-button routerLink="/customers" routerLinkActive="active"><i class="material-icons prefix">face</i>&nbsp;Customers</a>
   </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>
+>>>>>>> origin/master
